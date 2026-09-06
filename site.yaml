@@ -1,8 +1,8 @@
 specVersion: "0.2"
 site:
   id: lp
-  name: "Lp"
-  url: https://lp.test
+  name: "SiteSpec"
+  url: https://sitespec.github.io/lp
   locale: en
 
 assets:
@@ -44,5 +44,5 @@ navigation:
       target: blank
 
 seo:
-  titleTemplate: "%s — Lp"
-  defaultDescription: "Lp website."
+  titleTemplate: "%s — SiteSpec"
+  defaultDescription: "Demo website of SiteSpec."
