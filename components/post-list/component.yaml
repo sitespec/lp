@@ -1,7 +1,9 @@
 specVersion: "0.3"
 component:
-  id: feature-grid
+  id: post-list
   role: content
+
+description: Render entries from a typed content query.
 
 variants:
   - default
@@ -14,7 +16,6 @@ props:
   type: object
   additionalProperties: false
   required:
-    - title
     - items
   properties:
     title:
@@ -23,23 +24,30 @@ props:
     items:
       type: array
       minItems: 1
-      maxItems: 6
+      maxItems: 12
       items:
         type: object
-        additionalProperties: false
         required:
+          - id
           - title
-          - text
+          - href
         properties:
+          id:
+            type: string
           title:
             type: string
-            maxLength: 60
-          text:
+          description:
             type: string
-            maxLength: 180
+          href:
+            type: string
+          date:
+            type: string
+
+runtime:
+  javascript: false
 
 rules:
   allowedArchetypes:
     - marketing
-    - detail
     - listing
+    - blank

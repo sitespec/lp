@@ -1,4 +1,4 @@
-specVersion: "0.2"
+specVersion: "0.3"
 site:
   id: lp
   name: "SiteSpec"
@@ -18,9 +18,9 @@ navigation:
     - id: features
       label: Features
       href: /features
-    - id: examples
-      label: Examples
-      href: /examples
+    - id: blog
+      label: Blog
+      href: /blog
 
   features:
     - id: composition
@@ -44,5 +44,5 @@ navigation:
       target: blank
 
 seo:
-  titleTemplate: "%s — SiteSpec"
+  titleTemplate: "%s — Sitespec"
   defaultDescription: "Demo website of SiteSpec."
