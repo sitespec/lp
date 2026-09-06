@@ -1,0 +1,20 @@
+specVersion: "0.2"
+fonts:
+  inter:
+    family: Inter
+    sources:
+      - src: /fonts/Inter-Regular.woff2
+        format: woff2
+        weight: 400
+        style: normal
+        display: swap
+      - src: /fonts/Inter-Bold.woff2
+        format: woff2
+        weight: 700
+        style: normal
+        display: swap
+      - src: /fonts/Inter-ExtraBold.woff2
+        format: woff2
+        weight: 800
+        style: normal
+        display: swap

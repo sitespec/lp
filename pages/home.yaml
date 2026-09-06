@@ -1,0 +1,50 @@
+specVersion: "0.2"
+page:
+  id: home
+  route: /
+  archetype: marketing
+
+seo:
+  title: Home
+  description: A compact SiteSpec v0.2 site that demonstrates the composition model end to end.
+
+sections:
+  - id: intro
+    use: hero
+    variant: split
+    props:
+      eyebrow: SiteSpec 0.2
+      title: The specification is the source of truth
+      text: This starter demonstrates pages, reusable sections, UI primitives, dynamic routes, typed data, local fonts, semantic assets and agent inspection without a separate design handoff.
+      primaryAction:
+        label: Explore the v0.2 features
+        href: /features
+
+  - id: features
+    use: feature-grid
+    props:
+      title: One small site, the complete v0.2 composition model
+      items:
+        - title: UI primitives
+          text: Section implementations compose formal button and container primitives that Page Spec cannot use directly.
+        - title: Section presets
+          text: The final CTA is configured once and referenced across multiple pages with section:final-cta.
+        - title: Dynamic routes
+          text: One /features/[slug] Page Spec expands into three deterministic static routes declared in page.paths.
+        - title: Route parameters
+          text: Dynamic sections read the current slug through param:slug while SEO strings interpolate the same value.
+        - title: Typed pagination
+          text: Three static examples pages pass pagination objects validated by the v0.2 pagination core type.
+        - title: Agent protocol
+          text: The CLI exposes capabilities, routes, components, UI primitives, assets, fonts and navigation as inspectable JSON.
+
+  - id: explore
+    use: navigation-list
+    variant: inline
+    props:
+      title: Explore the starter
+      items:
+        $ref: navigation:primary
+
+  - id: final-cta
+    $ref: section:final-cta
