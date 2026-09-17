@@ -1,14 +1,13 @@
 specVersion: "0.7"
 ui:
-  id: button
+  id: icon-button
   role: action
 
-description: Primary and secondary action primitive that renders an anchor when href is provided and a native button otherwise.
+description: Compact icon-only button for shell controls such as theme and navigation toggles.
 
 variants:
   - default
-  - primary
-  - secondary
+  - ghost
 
 states:
   - default
@@ -22,18 +21,21 @@ props:
   additionalProperties: false
   required:
     - label
+    - icon
   properties:
     label:
       type: string
       minLength: 1
       maxLength: 80
-    href:
+    icon:
+      enum: [theme, menu]
+    controls:
       type: string
       minLength: 1
-    target:
-      enum: [self, blank]
-    type:
-      enum: [button, submit, reset]
+    expanded:
+      type: boolean
+    pressed:
+      type: boolean
     disabled:
       type: boolean
 

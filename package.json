@@ -1,5 +1,5 @@
 {
-  "name": "demo",
+  "name": "lp-new",
   "private": true,
   "type": "module",
   "scripts": {
@@ -10,7 +10,7 @@
     "site": "sitespec"
   },
   "devDependencies": {
-    "@sitespec/cli": "0.5.0"
+    "@sitespec/cli": "0.8.0"
   },
   "engines": {
     "node": ">=22"
